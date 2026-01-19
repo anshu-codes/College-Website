@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.background {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./images/pic1.jpg);
+  background-size: cover;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  color: aliceblue;
+}
+#logo {
+  padding: 10px 10px;
+  color: aliceblue;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  font-size: 20px;
+}
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+.navbar ul li ::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: #ebebeb;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.navbar ul li :hover::after {
+  width: 100%;
+}
